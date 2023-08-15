@@ -3,7 +3,7 @@
 import { CldImage, CldUploadButton } from "next-cloudinary";
 import { useState } from "react";
 
-type UploadResult = {
+export type UploadResult = {
   info: {
     public_id: string;
     url: string;
