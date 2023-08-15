@@ -13,20 +13,16 @@ type UploadResult = {
 
 export default function Home() {
   const [imageId, setImageId] = useState("");
-  const [imageUrl, setImageUrl] = useState("");
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <CldUploadButton
         onUpload={(result: UploadResult) => {
           setImageId(result.info.public_id);
-          setImageUrl(result.info.url);
-          console.log(result);
         }}
         uploadPreset="dl1jr7bi"
       />
 
-      {imageUrl}
       {imageId && (
         <CldImage
           width="400"
