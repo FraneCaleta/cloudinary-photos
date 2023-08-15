@@ -1,12 +1,18 @@
 import UploadButton from "./upload-button";
 import cloudinary from "cloudinary";
 
+type SearchResult = {
+  public_id: string;
+};
+
 export default async function GalleryPage() {
-  const result = await cloudinary.v2.search
+  const results = (await cloudinary.v2.search
     .expression("resource_type:image")
     .sort_by("public_id", "desc")
-    .max_results(30)
-    .execute();
+    .max_results(5)
+    .execute()) as { resources: SearchResult[] };
+
+  console.log(results);
 
   return (
     <section>
