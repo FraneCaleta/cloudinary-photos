@@ -13,11 +13,13 @@ export default function UploadButton() {
       <CldUploadButton
         onUpload={(result: UploadResult) => {
           /* setImageId(result.info.public_id); */
-          router.refresh();
+          setTimeout(() => {
+            router.refresh();
+          }, 1000);
         }}
         uploadPreset="dl1jr7bi"
       >
-        <div className="flex gap-2">
+        <div className="flex gap-2 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
