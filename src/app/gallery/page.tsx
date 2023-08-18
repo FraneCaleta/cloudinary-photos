@@ -12,7 +12,7 @@ export default async function GalleryPage() {
     .expression("resource_type:image")
     .sort_by("created_at", "desc")
     .with_field("tags")
-    .max_results(10)
+    .max_results(5)
     .execute()) as { resources: SearchResult[] };
 
   return (
