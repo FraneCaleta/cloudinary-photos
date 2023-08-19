@@ -25,9 +25,9 @@ export default async function FavoritesPage() {
               path="/favorites"
               key={result.public_id}
               imageData={result}
-              alt="An image of something"
               width="400"
               height="300"
+              alt="An image of something"
             />
           ))}
         </div>
