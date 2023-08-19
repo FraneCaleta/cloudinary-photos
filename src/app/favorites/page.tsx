@@ -1,7 +1,7 @@
 import { CloudinaryImage } from "../gallery/cloudinary-image";
-import cloudinary from "cloudinary";
 import { SearchResult } from "../gallery/page";
 import { ForceRefresh } from "@/components/force-refresh";
+import cloudinary from "cloudinary";
 
 export default async function FavoritesPage() {
   const results = (await cloudinary.v2.search
