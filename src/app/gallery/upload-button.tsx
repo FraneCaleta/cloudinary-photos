@@ -15,7 +15,7 @@ export default function UploadButton() {
           /* setImageId(result.info.public_id); */
           setTimeout(() => {
             router.refresh();
-          }, 1000);
+          }, 500);
         }}
         uploadPreset="dl1jr7bi"
       >
