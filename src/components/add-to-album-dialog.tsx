@@ -28,7 +28,9 @@ export function AddToAlbumDialog({
   return (
     <Dialog
       open={open}
-      onOpenChange={(newOpenState) => {
+      onOpenChange={(
+        newOpenState: boolean | ((prevState: boolean) => boolean)
+      ) => {
         setOpen(newOpenState);
         if (!newOpenState) {
           onClose();
