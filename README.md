@@ -1,3 +1,5 @@
+# Cloudinary Photos
+
 ## Getting Started
 
 Make sure you first install all of the dependencies:
