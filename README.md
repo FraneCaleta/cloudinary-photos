@@ -1,4 +1,5 @@
-# Cloudinary Photos
+# Cloudinary Photos (Next.js/Typescript)
+Advanced photo album created by using Next.js, Typescript, Cloudinary and Shadcn. By using power of Cloudinary, you can perform any kind of photo transformations and AI additions to the selected photo.
 
 ## Getting Started
 
